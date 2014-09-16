@@ -42,6 +42,7 @@ gem 'spring',        group: :development
 
 group :development, :test do
   gem 'jasmine-rails'
+  gem 'rspec-rails'
   # gem 'rails-assets-jasmine-jquery'
   # gem 'rails-assets-jasmine-ajax'
 end
