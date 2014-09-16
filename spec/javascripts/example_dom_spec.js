@@ -5,8 +5,12 @@ describe('example_dom.js', function() {
       // loadFixtures("example_dom.html");
 
       // fire event
-      // $('#ajax_test').click();
+      // $('#dom_test').click();
     });
+    it('sets data[counter] to 1');
     it('fires alert');
   });
 });
+
+// spyOn(window, 'alert')
+// expect(window.alert).toHaveBeenCalledWith("event triggered");

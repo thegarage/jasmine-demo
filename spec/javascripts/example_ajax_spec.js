@@ -2,13 +2,13 @@ describe('example_ajax.js', function() {
   describe('when #ajax_test is clicked', function() {
     beforeEach(function() {
       // setup HTML fixture
-      // setFixtures(sandbox({id: 'ajax_test'}));
+      setFixtures(sandbox({id: 'ajax_test'}));
 
       // install Ajax mock
-      // jasmine.Ajax.install();
+      jasmine.Ajax.install();
 
       // fire event
-      // $('#ajax_test').click();
+      $('#ajax_test').click();
     });
     it('performs request');
   });
@@ -21,3 +21,9 @@ describe('example_ajax.js', function() {
     it('fires alert w/ error message');
   });
 });
+
+
+// expect(jasmine.Ajax.requests.mostRecent().url).toBe('/path/to/endpoint');
+// spyOn(window, 'alert')
+// expect(window.alert).toHaveBeenCalledWith("good");
+// expect(window.alert).toHaveBeenCalledWith("bad");
