@@ -1,26 +1,41 @@
-// describe('example_dom.js', function() {
-//   describe('when #dom_test is clicked', function() {
-//     beforeEach(function() {
-//       // setup HTML fixture
-//       // loadFixtures("example_dom.html");
+describe('example_dom.js', function() {
+  describe('#dom_test click event', function() {
+    beforeEach(function() {
+      // setup HTML fixtures
+      loadFixtures('generated/example_dom.html')
 
-//       // fire event
-//       // $('#dom_test').click();
-//     });
-//     it('adds clicked class');
-//     it('sets data[counter] to 1');
-//     it('fires alert');
-//   });
+      spyOn(window, 'alert');
 
-//   describe('when #dom_test is clicked twice', function() {
-//     it('removes clicked class');
-//     it('increments data[counter] to 2');
-//   });
-// });
+      // perform action
+      $('#dom_test').click();
+    });
+    it('adds the clicked class to the link', function() {
+      expect($('#dom_test')).toHaveClass('clicked');
+    });
+    it('sets data[counter] to 1', function() {
+      expect($('#dom_test').data('counter')).toEqual(1);
+    });
+    it('calls alert', function() {
+      expect(window.alert).toHaveBeenCalledWith("event triggered");
+    });
+  });
 
-// v1
-// spyOn(window, 'alert')
-// expect(window.alert).toHaveBeenCalledWith("event triggered");
+  describe('#dom_test click event when already clicked', function() {
+    beforeEach(function() {
+      spyOn(window, 'alert');
 
-// v2
-// loadFixtures("generated/example_dom.html");
+      // setup HTML fixtures
+      loadFixtures('generated/example_dom.html');
+      $('#dom_test').click();
+
+      // perform action
+      $('#dom_test').click();
+    });
+    it('removes the clicked class to the link', function() {
+      expect($('#dom_test')).not.toHaveClass('clicked');
+    });
+    it('increments data[counter] to 2', function() {
+      expect($('#dom_test').data('counter')).toEqual(2);
+    })
+  });
+});

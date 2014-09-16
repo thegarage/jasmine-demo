@@ -5,5 +5,5 @@ $(document).on('click', '#dom_test', function() {
   counter += 1;
   $(this).data('counter', counter);
 
-  // window.alert('event triggered');
+  window.alert('event triggered');
 });
