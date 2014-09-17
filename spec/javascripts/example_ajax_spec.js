@@ -21,7 +21,6 @@ describe('example_ajax.js', function() {
     });
     it('performs xhr to /path/to/endpoint', function() {
       expect(jasmine.Ajax.requests.mostRecent().url).toBe('/path/to/endpoint');
-      // expect(jasmine.Ajax).toHaveRequested('/path/to/endpoint');
     });
   });
 
