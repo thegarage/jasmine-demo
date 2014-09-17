@@ -52,7 +52,7 @@ $ rake spec:javascripts SPEC=my_feature.js RAILS_ENV=test
 #### Fixtures
 * [Jasmine-Jquery fixtures](https://github.com/velesin/jasmine-jquery#html-fixtures)
 * fixtures are typically used for HTML snippets, but they are also useful for external CSS/JSON resources.
-* add [spec/javascripts/helpers/jasmine_rails_fixture_path.js]() to spec_helper.js
+* add [spec/javascripts/helpers/jasmine_rails_fixture_path.js](spec/javascripts/helpers/jasmine_rails_fixture_path.js) to spec_helper.js
   to setup Rails asset pipeline paths.
 * [Dynamic Fixtures w/ RSpec](http://codecrate.com/2014/02/jasmine-dynamic-fixtures.html)
 
