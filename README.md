@@ -6,12 +6,12 @@ $ open http://localhost:3000/specs
 ```
 
 Example Source Code:
-* [app/assets/javascripts/example_dom.js](blob/master/app/assets/javascripts/example_dom.js)
-* [app/assets/javascripts/example_ajax.js](blob/master/app/assets/javascripts/example_ajax.js)
+* [app/assets/javascripts/example_dom.js](app/assets/javascripts/example_dom.js)
+* [app/assets/javascripts/example_ajax.js](app/assets/javascripts/example_ajax.js)
 
 Example Tests:
-* [spec/javascripts/example_dom_spec.js](blob/master/spec/javascripts/example_dom_spec.js)
-* [spec/javascripts/example_ajax_spec.js](blob/master/spec/javascripts/example_ajax_spec.js)
+* [spec/javascripts/example_dom_spec.js](spec/javascripts/example_dom_spec.js)
+* [spec/javascripts/example_ajax_spec.js](spec/javascripts/example_ajax_spec.js)
 
 
 ## The Basics
